@@ -4,33 +4,33 @@ void main() {
 
   print("List: $listOfNum");
 
-  var city = [];
-  city.add("Ahmedabad");
-  city.add("Vadodara");
-  city.add("Surat");
-  city.add("Rajkot");
-  print("Cities :: $city");
-  city.insert(1, "GandhiNagar");
-  print("Cities :: $city");
-  city.addAll(listOfNum);
-  print("Cities :: $city");
-  city.insertAll(5, listOfNum);
-  print("Cities :: $city");
-  city[0] = "New City";
-  print("Cities :: $city");
+  var cityList = [];
+  cityList.add("Ahmedabad");
+  cityList.add("Vadodara");
+  cityList.add("Surat");
+  cityList.add("Rajkot");
+  print("Cities :: $cityList");
+  cityList.insert(1, "GandhiNagar");
+  print("Cities :: $cityList");
+  cityList.addAll(listOfNum);
+  print("Cities :: $cityList");
+  cityList.insertAll(5, listOfNum);
+  print("Cities :: $cityList");
+  cityList[0] = "New City";
+  print("Cities :: $cityList");
 
-  city.replaceRange(5, 10, [
+  cityList.replaceRange(5, 10, [
     "Junagadh",
     "Bhavnagar",
     "Jamnagar",
     "Morbi",
     "Navsari",
   ]);
-  print("Cities :: $city");
-  city.removeAt(0);
-  print("Cities :: $city");
-  city.removeLast();
-  print("Cities :: $city");
-  city.removeRange(0, 5);
-  print("Cities :: $city");
+  print("Cities :: $cityList");
+  cityList.removeAt(0);
+  print("Cities :: $cityList");
+  cityList.removeLast();
+  print("Cities :: $cityList");
+  cityList.removeRange(0, 5);
+  print("Cities :: $cityList");
 }
